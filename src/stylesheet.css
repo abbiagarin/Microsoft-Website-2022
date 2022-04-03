@@ -1,0 +1,874 @@
+/* BASIC SETUP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #262626;
+  font-size: 1.3rem;
+}
+
+.margin__wrapper,
+.img__margin__wrapper {
+  margin: 1.6rem 4.7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----NAVIGATION-BAR---- */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+/* ----HAMBURGER MENU ----*/
+.menu__bar {
+  cursor: pointer;
+  display: none;
+}
+/*---HAMBURGER MENU ENDS--- */
+
+.logo {
+  width: 13rem;
+}
+
+#left__nav__menu {
+  display: flex;
+  flex: 1;
+}
+
+#left__nav__menu {
+  margin-left: 1.5rem;
+}
+
+#left__nav__menu a {
+  margin-left: 3rem;
+  color: #262626;
+}
+
+#right__nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+#right__nav__menu li {
+  margin-left: 3rem;
+}
+
+#left__nav__menu a:hover,
+#right__nav__menu a:hover {
+  border-bottom: 2px solid #6f6f6e;
+  cursor: pointer;
+}
+
+.fas {
+  padding: 0.4rem;
+  font-size: 1.6rem;
+}
+
+/* ----MEGA-DROPDOWN-MENU SETUP---- */
+
+.mega__box {
+  position: absolute;
+  top: 5.5rem;
+  left: 0;
+  width: 90%;
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 0 7.5rem;
+  padding-left: 3.9rem;
+  border-bottom: 2px solid #000;
+}
+
+.hidden {
+  display: none;
+}
+
+.row {
+  line-height: 4.8rem;
+}
+
+.row li a {
+  margin-left: -2.9rem;
+  color: #262626;
+}
+
+.row a:hover {
+  border-bottom: 2px solid #6f6f6e;
+}
+
+#menu__media__queries {
+  display: none;
+}
+
+#menu__media__queries li {
+  margin-left: 0.1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#menu__media__queries a {
+  margin-left: 0.1rem;
+}
+
+/* ---NAVIGATION-BAR ENDS---- */
+
+/* ----IMAGE-SHOWCASE---- */
+.img__display {
+  background: url(/img/laptop-1.webp) no-repeat center center/cover;
+  width: 100%;
+  height: 50rem;
+}
+
+.display__text {
+  margin-top: -3.5rem;
+}
+
+.display__text__area {
+  height: 16.4rem;
+  width: 60%;
+  padding-left: 6.3rem;
+  padding-top: 15rem;
+}
+
+#btn__yellow {
+  background-color: #ffb900;
+  width: 6rem;
+  color: #000000;
+  height: 3.5rem;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.display__text__area h1 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 0.063rem;
+  padding-bottom: 0.7rem;
+  hyphens: manual;
+}
+
+.display__text__area p {
+  color: #fff;
+  font-size: 1.5rem;
+  padding-bottom: 1.6rem;
+}
+
+#btn__white {
+  width: 22.5rem;
+  font-weight: bold;
+  padding: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+#btn__white:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #6f6f6e;
+}
+
+/* IMAGE-SHOWCASE ENDS */
+
+/* --TABS-DISPLAY--- */
+
+.card__display {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cards__container img {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.cards__container h3 {
+  color: #000000;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.cards__container p {
+  color: #000000;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.cards__container a {
+  color: #0067b8;
+}
+
+.cards__container a:hover {
+  border-bottom: 2px solid #0067b8;
+}
+
+/* --TABS-DISPLAY ENDS-- */
+
+/* ---DEVICE-SHOWCASE ---*/
+.device__showcase {
+  background: url(/img/device-display.webp) no-repeat center center/cover;
+  height: 50rem;
+}
+
+.showcase {
+  height: 16.4rem;
+  width: 60%;
+  padding-left: 6.3rem;
+  padding-top: 15rem;
+}
+
+.showcase h2 {
+  font-size: 3rem;
+  letter-spacing: 0.063rem;
+  padding-bottom: 0.7rem;
+}
+
+.showcase p {
+  font-size: 1.5rem;
+  padding-bottom: 1.6rem;
+}
+
+#btn__black {
+  background-color: #000000;
+  color: #fff;
+  width: 15rem;
+  padding: 0.5rem;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+/* ---DEVICE SHOWCASE ENDS--- */
+
+/* ---SECOND-IMAGE-DISPLAY--- */
+
+#header {
+  font-size: 2.7rem;
+  font-weight: 650;
+  margin-top: 4rem;
+}
+
+.card__display2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.cards__container2 img {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.cards__container2 h3 {
+  color: #000000;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.cards__container2 p {
+  color: #000000;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.cards__container2 a {
+  color: #0067b8;
+}
+
+.cards__container2 a:hover {
+  border-bottom: 2px solid #0067b8;
+}
+/* ---SECOND-IMAGE-DISPLAY-ENDS--- */
+
+/*---- ABOUT-ME-TAB---- */
+
+.tabs__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3rem;
+}
+
+.tabs__button {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tabs__button a {
+  color: #000000;
+  font-weight: bold;
+}
+
+.tabs__btn:active {
+  opacity: 0.6;
+}
+
+.tabs__button a:first-child {
+  margin-right: 2rem;
+}
+
+.tab__line {
+  border-bottom: 2px solid #000000;
+  width: 19rem;
+  margin-top: 1rem;
+}
+/* ---ABOUT-ME---*/
+
+.about__me__tab {
+  width: 90%;
+  margin: auto;
+}
+
+.about__me__tab__container {
+  margin-top: 4rem;
+}
+
+.about__me__content__area {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 12rem;
+  margin-bottom: 5rem;
+}
+
+.about__me__tab__container img {
+  width: 18rem;
+  margin-left: 25rem;
+  border-radius: 15%;
+}
+
+.about__me__tab__container h1 {
+  color: #000000;
+}
+
+.about__me__tab__container p {
+  color: #000000;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about__me__tab__container a {
+  margin-top: 2rem;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* ----ABOUT-ME-TAB-ENDS--- */
+
+/* ---COVID-STATEMENT */
+.covid__statement {
+  text-align: center;
+  padding: 3.5rem;
+  background-color: #e6e6e6;
+}
+
+.covid__text__area h1 {
+  font-size: 3.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.covid__text__area p {
+  font-size: 1.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.covid__text__area a {
+  color: #000000;
+  padding-bottom: 0.3rem;
+}
+
+.covid__text__area a:hover {
+  border-bottom: 2px solid #000000;
+}
+
+/* --COVID-STATEMENT-ENDS */
+
+/* ---SOCIAL-MEDIA--- */
+.social__media {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.social__media p {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-right: 1.5rem;
+}
+
+.social__media img {
+  padding: 1rem;
+}
+/* ---SOCIAL MEDIA-ENDS--- */
+
+/* FOOTER */
+.footer__container {
+  width: 100%;
+  background-color: rgb(243, 242, 242);
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-around;
+}
+
+.footer__row {
+  margin-top: 3rem;
+}
+
+.footer__content li {
+  line-height: 2.8;
+}
+
+.footer__row h4 {
+  color: #6f6f6e;
+}
+
+.footer__row a {
+  color: #6f6f6e;
+  font-size: 1.2rem;
+}
+
+.footer__row a:hover {
+  border-bottom: 1px solid #6f6f6e;
+}
+
+.sub__footer__container {
+  background-color: rgb(243, 242, 242);
+  width: 100%;
+}
+
+.sub__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.sub__container li {
+  display: inline-block;
+  padding: 0.7rem;
+}
+
+#left__footer,
+#right__footer {
+  margin-left: 5rem;
+}
+
+.sub__container a,
+p {
+  color: #6f6f6e;
+  font-size: 1.2rem;
+}
+
+.sub__container a:hover,
+p:hover {
+  opacity: 0.6;
+}
+/* --FOOTER ENDS-- */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1399px) {
+  .item__label {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1083px) {
+  .img__margin__wrapper {
+    margin: auto;
+  }
+
+  .mega__box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .img__display {
+    background: url(/img/img-display-media-query.webp) no-repeat center
+      center/cover;
+  }
+
+  #btn__yellow {
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .display__text__area h1 {
+    color: #000000;
+    font-size: 2.5rem;
+  }
+
+  .display__text__area p {
+    color: #000000;
+    font-size: 1.3rem;
+  }
+
+  #btn__white {
+    background-color: #000000;
+    color: #fff;
+    width: 20rem;
+  }
+
+  .device__showcase {
+    background: url(/img/laptop-1.webp) no-repeat center center/cover;
+  }
+
+  .showcase h2 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+
+  .showcase p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  #btn__black {
+    background-color: #ffb900;
+    color: #000000;
+    width: 13rem;
+  }
+
+  .card__display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+
+  .card__display2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+
+  .covid__statement {
+    display: none;
+  }
+
+  .social__media p {
+    font-size: 1.6rem;
+  }
+
+  .social__media img {
+    padding: 0.5rem;
+  }
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__row {
+    margin-top: 3.5rem;
+    padding-left: 5rem;
+  }
+
+  #left-footer,
+  #right-footer {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mega__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  #microsoft__menu,
+  #left__nav__menu {
+    display: none;
+  }
+
+  .menu__bar,
+  #menu__media__queries {
+    display: block;
+  }
+
+  .mega__box {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+
+  .row a,
+  .row h4 {
+    color: #6f6f6e;
+  }
+
+  .row {
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visibility {
+    display: none;
+  }
+
+  .about__me__tab__container {
+    margin-top: 3rem;
+  }
+
+  .about__me__content__area {
+    margin-left: 10rem;
+  }
+
+  .about__me__tab__container img {
+    width: 15rem;
+    margin-left: 10rem;
+  }
+
+  .about__me__tab__container p {
+    font-size: 1.6rem;
+    color: #000000;
+  }
+
+  .btn {
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .sub__container li {
+    display: inline-block;
+    padding: 0.7rem;
+  }
+
+  #left__footer,
+  #right__footer {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sub__container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .device__showcase {
+    background: url(/img/laptop-1.webp) no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .img__display {
+    background: url(/img/img-display-media-query.webp) no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .business__tab,
+  .card__display {
+    margin-top: 23rem;
+  }
+
+  .showcase__text,
+  .display__text {
+    background-color: #ccc;
+    display: block;
+    height: 28rem;
+  }
+
+  .showcase,
+  .display__text__area {
+    padding-top: 45rem;
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .showcase h2 {
+    color: #000000;
+    font-size: 2rem;
+    padding-top: 7.5rem;
+  }
+
+  .showcase p {
+    color: #000;
+    font-size: 1.4rem;
+  }
+
+  #btn__black {
+    width: 12rem;
+  }
+
+  #btn__yellow {
+    margin-top: 3rem;
+  }
+
+  .display__text__area h1 {
+    color: #000000;
+    font-size: 2rem;
+  }
+
+  .display__text__area p {
+    font-size: 1.3rem;
+  }
+
+  .about__me__tab__container {
+    margin-top: 0.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .about__me__content__area {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .about__me__tab__container img {
+    margin-left: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  /* ---NAVIGATION-STARTS---- */
+  .logo {
+    width: 10rem;
+    margin-left: 8.5rem;
+  }
+
+  .fas {
+    font-size: 1.5rem;
+    padding: 0.1rem;
+  }
+
+  /* ---NAVIGATION-ENDS---- */
+
+  .img__margin__wrapper {
+    margin: auto;
+  }
+  .margin__wrapper {
+    margin: 1.6rem 1.5rem;
+  }
+
+  .card__display,
+  .card__display2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .footer__container {
+    display: block;
+  }
+
+  .footer__content li {
+    line-height: 1.5;
+  }
+
+  .footer__row {
+    margin-top: 2.5rem;
+    padding-left: 2.5rem;
+    padding-top: 0.8rem;
+  }
+
+  .sub__container li {
+    display: block;
+    padding: 0.3rem;
+  }
+
+  .device__showcase {
+    background: url(/img/device-display-2.webp) no-repeat;
+    background-position: 50% 10%;
+    margin-top: -2.2rem;
+  }
+
+  .img__display {
+    background: url(/img/laptop-2.webp) no-repeat;
+    background-position: 50% 10%;
+    margin-top: -2.2rem;
+  }
+
+  .showcase,
+  .display__text__area {
+    padding-top: 30rem;
+  }
+
+  .business__tab,
+  .card__display {
+    margin-top: 7rem;
+  }
+
+  .display__text {
+    background-color: #000;
+  }
+
+  .display__text__area h1 {
+    color: #fff;
+  }
+
+  .display__text__area p {
+    color: #fff;
+  }
+
+  #btn__yellow {
+    background-color: #ffb900;
+    color: #000;
+  }
+
+  #btn__white {
+    background-color: #fff;
+    color: #000;
+  }
+}
