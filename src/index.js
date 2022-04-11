@@ -28,9 +28,12 @@ const closeProfile = function (e) {
 };
 
 for (let i = 0; i < header.length; i++)
-  header[i].addEventListener("click", function () {
+  header[i].addEventListener("click", function (e) {
+    /*
     for (let i = 0; i < menuOption.length; i++)
-      menuOption[i].classList.toggle("visibility");
+      menuOption[i].classList.toggle("visibility"); */
+      e.target.nextElementSibling.classList.toggle("visibility");
+      console.log(e);
   });
 
 microsoftMenu.addEventListener("click", displayMenu);
