@@ -79,8 +79,14 @@ a {
 }
 
 .fas {
+  vertical-align: middle;
   padding: 0.4rem;
   font-size: 1.6rem;
+}
+
+.fa {
+  padding: 0.5rem;
+  vertical-align: middle;
 }
 
 /* ----MEGA-DROPDOWN-MENU SETUP---- */
@@ -251,9 +257,10 @@ a {
 #btn__black {
   background-color: #000000;
   color: #fff;
-  width: 15rem;
-  padding: 0.5rem;
+  width: 18rem;
+  padding: 0.9rem;
   letter-spacing: 0.5px;
+  font-weight: bold;
   border: none;
 }
 
@@ -563,7 +570,7 @@ p:hover {
   #btn__black {
     background-color: #ffb900;
     color: #000000;
-    width: 13rem;
+    width: 18rem;
   }
 
   .card__display {
@@ -701,6 +708,10 @@ p:hover {
 }
 
 @media screen and (max-width: 750px) {
+  .logo {
+    margin-left: 9.5rem;
+  }
+
   .device__showcase {
     background: url(/img/laptop-1.webp) no-repeat;
     background-position: 100% 100%;
@@ -734,7 +745,7 @@ p:hover {
   .showcase h2 {
     color: #000000;
     font-size: 2rem;
-    padding-top: 7.5rem;
+    padding-top: 8rem;
   }
 
   .showcase p {
@@ -743,7 +754,7 @@ p:hover {
   }
 
   #btn__black {
-    width: 12rem;
+    width: 16rem;
   }
 
   #btn__yellow {
@@ -784,7 +795,11 @@ p:hover {
   /* ---NAVIGATION-STARTS---- */
   .logo {
     width: 10rem;
-    margin-left: 8.5rem;
+    margin-left: 6rem;
+  }
+
+  .menu__bar {
+    font-size: 0.8em;
   }
 
   .fas {
@@ -798,7 +813,7 @@ p:hover {
     margin: auto;
   }
   .margin__wrapper {
-    margin: 1.6rem 1.5rem;
+    margin: 1.6rem 2rem;
   }
 
   .card__display,
