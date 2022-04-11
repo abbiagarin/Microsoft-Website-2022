@@ -356,14 +356,14 @@ a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 12rem;
+  margin-left: 15rem;
   margin-bottom: 5rem;
 }
 
 .about__me__tab__container img {
   width: 18rem;
-  margin-left: 25rem;
-  border-radius: 15%;
+  margin-left: 20rem;
+  border-radius: 10%;
 }
 
 .about__me__tab__container h1 {
@@ -623,6 +623,10 @@ p:hover {
 
   .hidden {
     display: none;
+  }
+
+  .about__me__tab__container {
+    margin-top: 3rem;
   }
 }
 
